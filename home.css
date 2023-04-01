@@ -1,0 +1,77 @@
+@import"https://fonts.googleapis.com/css?family=Ubuntu";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(42, 55, 69);
+}
+:root{
+    --navbar-heigth: 59px;
+}
+#navbar{
+   position: relative;
+  display: flex;
+}
+h2{font-family: ubuntu;
+   color: rgb(133, 23, 237) ;
+    font-size: xx-large;
+    margin: 5px 30px;
+}
+#navbar ul{ text-decoration: none;
+  display: flex;
+ margin-left:50em;
+}
+  #navbar ul li{
+    list-style: none;
+    font-size: 1.5rem ;
+    padding-left: 1.2em;
+ }
+  #navbar ul li a{
+    text-decoration: none;
+    margin: 5px 30px;
+    color: aliceblue;
+    background-color: rgb(139, 63, 210);
+    padding: 5px 10px;
+    border-radius: 5px;
+  
+
+}
+
+#navbar::before{ 
+    content: " " ;
+    background-color: rgb(5, 5, 5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+
+}
+.head{
+
+    margin-left: 600px;
+   margin-top: 50px;
+    font-family: Ubuntu;
+    color: bisque;
+}
+
+.points{
+    font-family: ubuntu;
+    list-style:inside;
+    justify-content: center;
+}
+#point{
+    height:550px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px ;
+    background-color: bisque;
+    font-size: larger;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+#point ul li {
+    padding-top: 20px;
+}
+

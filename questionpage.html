@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quizzing Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="questionpage.css">
+</head>
+<body>
+	<div id="rules"> <h3>Rules:</h3>
+		<ul class="rules">
+			<li class="list">1. Once you start quiz the timer is set. </li>
+			<li class="list">2. You are provided with 10 seconds to answer each question.</li>
+			<li class="list">3. Once the timer is out you are redirected to next question automatically.</li>
+			<li class="list">4. Each question carries one mark.</li>
+			<li class="list">5. You cannot go to previous question.</li>
+		</ul>
+		<div><button id="start">start quiz</button></div>
+	</div class="quizform">
+		<form id="quizform">		
+<div id="qbox">
+<span id="timeleft">Time Left : </span><span id="timer">10</span>
+	<div class="question"> question 1</div>
+	<ul>
+		<li><input type="radio" name="option" class="option" id="ans1">
+		<label for="ans1" id="option1"> answer option</label></input>
+		</li>
+		
+		<li><input type="radio" name="option" class="option" id="ans2">
+			<label for="ans2" id="option2"> answer option</label></input>
+		</li>
+		<li><input type="radio" name="option" class="option" id="ans3">
+			<label for="ans3" id="option3"> answer option</label></input>
+		</li>
+		<li><input type="radio" name="option" class="option" id="ans4">
+	 	<label for="ans4" id="option4"> answer option</label></input>
+		</li>
+	</ul>
+
+
+<button class="btn-next" id="submit">submit</button>
+
+<div id="restart"></div>
+</div>
+<div id="showScore"></div>
+</form></div>
+
+	<script src="quiz.js"></script>
+</body>
+</html>

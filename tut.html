@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	
+ <script  type="module" src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js"></script> 
+</head>
+<body> 
+	
+
+	<h1>Create a Quiz</h1>
+	<form id="quizForm">
+		<label for="question">Question:</label>
+		<input type="text" id="question" placeholder="enter question" name="question"><br>
+
+		<label for="option1">Option 1:</label>
+		<input type="text" id="option1" placeholder="enter option1" name="option1"><br>
+
+		<label for="option2">Option 2:</label>
+		<input type="text" id="option2" placeholder="enter option2" name="option2"><br>
+
+		<label for="option3">Option 3:</label>
+		<input type="text" id="option3" placeholder="enter option3" name="option3"><br>
+
+		<label for="option4">Option 4:</label>
+		<input type="text" id="option4" placeholder="enter option4" name="option4"><br>
+
+		<input type="button" id="addqtion" value="Add Question">
+		<button  id="createquiz" >Create Quiz</button>
+	</form>
+
+	
+	 <div id="quizzes"></div>
+	 <script type="module"src="createquiz.js" ></script>
+	</body>
+	</html> 

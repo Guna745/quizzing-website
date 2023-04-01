@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form </title>
+    <link rel="stylesheet" href="tut.css">
+    <link rel="stylesheet" href="quiz2.css">
+</head>
+<body>
+    <pre><h2>   </h2></pre>
+<div class="form-box">
+    <h3>Log In</h3>
+    <form class="form">
+        <div class="c2">Email Address</div>
+        <input type="text" class="c1" id="email" placeholder="  name@example.com">
+        <div class="c2">Password</div>
+        <input type="password" class="c1" id="password" placeholder="  enter password">
+        <div >
+            <button class="c3" id="submit-btn" type="button">login</button>
+        </div>
+    </form>
+    <div id="id">New user ?<a href="signup.html">register</a></div>
+
+</div>
+<div class="box">
+  <div class="c4"> <div  class="c5"><a class="c6"  href="tut.html">Create a Quiz</a> </div>
+<pre class="c5"><a class="c6"  href="questionpage.html">  Take a Quiz  </a> </pre></div>
+ 
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+  import { getDatabase,set,ref } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js" ;
+  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCW7SSRKAgLSB5GYp_Y4xGmTlIf6_P6XkU",
+      authDomain: "quizzing-website-b1db2.firebaseapp.com",
+      databaseURL: "https://quizzing-website-b1db2-default-rtdb.firebaseio.com",
+      projectId: "quizzing-website-b1db2",
+      storageBucket: "quizzing-website-b1db2.appspot.com",
+      messagingSenderId: "887254109424",
+      appId: "1:887254109424:web:447e02e00b025361a90635"
+    };
+  
+    // Initialize Firebase
+    const formbox =document.querySelector('.form-box')
+    const box= document.querySelector('.box')
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+  const auth = getAuth(app);
+  box.style.display='none'
+
+  document.getElementById("submit-btn").addEventListener("click",function() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    
+    
+  signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    console.log(user);
+      alert("loged in successfully !!")
+    //...
+    box.style.display='block'
+    formbox.style.display='none'
+
+  })
+
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log(errorMessage);
+    alert(errorCode);
+  });
+})
+  </script>
+</html>

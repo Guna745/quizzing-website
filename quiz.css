@@ -1,0 +1,94 @@
+@import"https://fonts.googleapis.com/css?family=Ubuntu";
+
+.c1{
+    height:100%;
+    width:100%;
+    background-color: rgb(249, 249, 246);
+  
+     background-position: center;
+    background-size: cover;
+    
+
+
+}
+ 
+.header2{
+    font-family:ubuntu;
+    text-align: center;
+    margin-top: 110px;
+    color: rgb(27, 4, 110);}
+
+    h3{margin: 0px;
+        padding: 0%;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+
+
+#submit-btn{
+ color: rgb(1, 18, 23);
+    padding: 2px;
+  margin-top: 25px;
+ border-radius: 10px;
+    background-color: rgba(16, 8, 252,0 );
+    justify-content: center;
+    border: solid  rgb(16, 16, 16); 
+   width: 175px;
+  
+   font-size: large;
+}
+#submit-btn:hover{ color:rgb(240, 253, 255);
+    background-color: black;
+
+}
+.form-box{
+    height: 400px;
+    width: 300px;
+    background-image:  url(image3.jpg);
+    background-color: rgb(143, 143, 142);
+    background-blend-mode: color-dodge;
+   margin-top: 10px;
+    font-family:ubuntu;
+background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid black;
+    border-radius: 10px;
+   margin-bottom: auto;
+    padding: 20px;
+    margin-bottom: 300px;
+    font-size: larger;
+}
+.form1{
+    color: rgb(12, 12, 12);
+    background-color: rgba(18, 18, 215, 0);
+    border: solid  rgb(16, 16, 16);
+    border-radius: 10px;
+   margin-top: 15px;
+   font-size: large;
+   width:200px;
+
+    
+}
+.c2{
+    padding-top: 15px;
+    margin-top: 10px;
+  
+}
+   
+label{
+    font-family: ubuntu;
+    padding: 5px;
+    margin: 10px;
+    
+}
+#id1{
+    margin-top: 20px;
+    font-size: large;
+    margin-left: 50px;
+}
+#id2{
+    margin-top: 0%;
+}
